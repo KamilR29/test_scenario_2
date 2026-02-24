@@ -1,0 +1,81 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =========================
+# PyCharm / IntelliJ
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# =========================
+# VS Code (na wszelki)
+# =========================
+.vscode/
+
+# =========================
+# Logs & reports
+# =========================
+*.log
+logs/
+reports/
+allure-results/
+allure-report/
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# =========================
+# Selenium / test artifacts
+# =========================
+screenshots/
+*.png
+*.jpg
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.swo
