@@ -22,9 +22,15 @@ pipeline {
       steps {
         bat """
         call .venv\\Scripts\\activate
-        python -m unittest discover -s test -p "test_*.py" -v
+        python -m xmlrunner discover -s test -p "test_*.py" -o reports
         """
       }
     }
   }
+  post {
+      always {
+        junit 'reports/*.xml'
+        archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+      }
+    }
 }
